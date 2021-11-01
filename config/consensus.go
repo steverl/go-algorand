@@ -1054,6 +1054,12 @@ func initConsensusProtocols() {
 	// Enable TEAL 6 / AVM 1.1
 	vFuture.LogicSigVersion = 6
 
+	// Increase Global and Local states
+	// Maximum number of key/value pairs per local key/value store
+	vFuture.MaxLocalSchemaEntries = 128
+	// Maximum number of key/value pairs per global key/value store
+	vFuture.MaxGlobalSchemaEntries = 256
+
 	vFuture.MaxProposedExpiredOnlineAccounts = 32
 
 	Consensus[protocol.ConsensusFuture] = vFuture
