@@ -1056,9 +1056,9 @@ func initConsensusProtocols() {
 
 	// Increase Global and Local states
 	// Maximum number of key/value pairs per local key/value store
-	vFuture.MaxLocalSchemaEntries = 128
+	vFuture.MaxLocalSchemaEntries = 81920
 	// Maximum number of key/value pairs per global key/value store
-	vFuture.MaxGlobalSchemaEntries = 256
+	vFuture.MaxGlobalSchemaEntries = 81920
 
 	vFuture.MaxProposedExpiredOnlineAccounts = 32
 
