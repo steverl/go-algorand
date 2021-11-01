@@ -1060,7 +1060,7 @@ func initConsensusProtocols() {
 	// Maximum number of key/value pairs per global key/value store
 	vFuture.MaxGlobalSchemaEntries = 81920
 	// Max MinBalance 10000.1 Algos
-	v24.MaximumMinimumBalance = 10000100000
+	vFuture.MaximumMinimumBalance = 10000100000
 
 	vFuture.MaxProposedExpiredOnlineAccounts = 32
 
